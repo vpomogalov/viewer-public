@@ -62,7 +62,7 @@
 
         async function init() {
             try {
-                const resp = await fetch(`${FUNCTION_URL}?file=player.html`);
+                const resp = await fetch(`${FUNCTION_URL}?file=index.html`);
                 if (!resp.ok) throw new Error('Ошибка загрузки плеера');
                 const html = await resp.text();
                 
